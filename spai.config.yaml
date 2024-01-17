@@ -6,4 +6,4 @@ scripts:
   - name: bye
 apis:
   - name: hello
-    port: 8000
+    port: 8010
