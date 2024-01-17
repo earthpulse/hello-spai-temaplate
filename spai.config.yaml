@@ -4,3 +4,6 @@ thumbnail: https://play.google.com/store/apps/details?id=com.hellomagazine.hello
 scripts:
   - name: hello
   - name: bye
+apis:
+  - name: hello
+    port: 8000
