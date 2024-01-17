@@ -5,6 +5,9 @@
 	"scripts": [
 		{
 			"name": "hello"
+		},
+		{
+			"name": "bye"
 		}
 	]
 }
