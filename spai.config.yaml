@@ -1,14 +1,15 @@
 project: hello-spai
 description: Template for testing SPAI
 thumbnail: https://play.google.com/store/apps/details?id=com.hellomagazine.hellomagazine&hl=es_US
-# scripts:
-#   - name: hello
-#   - name: bye
-# apis:
-#   - name: hello
-#     port: 8010
-# uis:
-#   - name: hello
-#     port: 8020
+scripts:
+  - name: hello
+  - name: bye
+apis:
+  - name: hello
+    port: 8010
+uis:
+  - name: hello
+    port: 8020
+    command: streamlit run uis/hello/main.py --server.address localhost # local
 notebooks:
   - name: hello
