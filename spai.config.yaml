@@ -7,3 +7,8 @@ scripts:
 apis:
   - name: hello
     port: 8010
+uis:
+  - name: hello
+    port: 8020
+notebooks:
+  - name: hello
