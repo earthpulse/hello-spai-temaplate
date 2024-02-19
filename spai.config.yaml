@@ -3,7 +3,6 @@ description: Template for testing SPAI
 thumbnail: https://play.google.com/store/apps/details?id=com.hellomagazine.hellomagazine&hl=es_US
 scripts:
   - name: hello
-  - name: bye
 apis:
   - name: hello
     port: 8010
