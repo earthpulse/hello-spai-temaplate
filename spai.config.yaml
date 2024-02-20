@@ -1,13 +1,21 @@
 project: hello-spai
 description: Template for testing SPAI
 thumbnail: https://play.google.com/store/apps/details?id=com.hellomagazine.hellomagazine&hl=es_US
+
+storage:
+  - name: data
+    type: local # use "s3" to get a cloud bucket
+
 scripts:
   - name: hello
+
 apis:
   - name: hello
     port: 8010
+
 uis:
   - name: hello
     command: streamlit run main.py --server.address 0.0.0.0 --server.port 80
+
 notebooks:
   - name: hello

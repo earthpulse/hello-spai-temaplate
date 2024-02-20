@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 import argparse
+from spai.storage import Storage
 
 app = FastAPI(title="analytics")
 app.add_middleware(
@@ -12,11 +13,14 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+storage = Storage()
+
+data = storage["data"]
 
 @app.get("/")
 async def hello():
-    return "Hello World!"
-
+    print("Hello, SPAI!")
+    return {"files": data.list()}
 
 # need this to run in background
 if __name__ == "__main__":
