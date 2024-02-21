@@ -1,6 +1,6 @@
 {
-	"var1": "hello",
-	"var2": [
+	"message": "hola",
+	"some_data": [
 		1,
 		2,
 		3

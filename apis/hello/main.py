@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 import uvicorn
 import argparse
 from spai.storage import Storage
+from spai.config import SPAIVars
 
 app = FastAPI(title="analytics")
 app.add_middleware(
@@ -14,13 +15,15 @@ app.add_middleware(
 )
 
 storage = Storage()
-
 data = storage["data"]
+vars = SPAIVars()
 
 @app.get("/")
 async def hello():
     print("Hello, SPAI!")
-    return {"files": data.list()}
+    print("Files in storage", data.list())
+    print("Variables", vars)
+    return {"data": vars["some_data"]}
 
 # need this to run in background
 if __name__ == "__main__":

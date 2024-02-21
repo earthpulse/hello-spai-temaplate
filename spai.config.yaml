@@ -16,6 +16,5 @@ apis:
 uis:
   - name: hello
     command: streamlit run main.py --server.address 0.0.0.0 --server.port 80
-
-notebooks:
-  - name: hello
+# notebooks:
+#   - name: hello
