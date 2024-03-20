@@ -4,7 +4,7 @@ thumbnail: https://play.google.com/store/apps/details?id=com.hellomagazine.hello
 
 storage:
   - name: data
-    type: s3 # use "s3" to get a cloud bucket
+    type: s3
 
 scripts:
   - name: hello
